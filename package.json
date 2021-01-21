@@ -22,7 +22,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prettier": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
+    "coverage": "npm test -- --coverage --watchAll=false",
+    "lint": "prettier --check .",
+    "format": "prettier --write ."
   },
   "eslintConfig": {
     "extends": [
@@ -41,5 +45,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1"
+  },
+  "lint-staged": {
+    "*": "prettier --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }

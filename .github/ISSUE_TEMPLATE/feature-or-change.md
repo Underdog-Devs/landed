@@ -4,12 +4,11 @@ about: Suggest a new feature or a change
 title: ''
 labels: ''
 assignees: ''
-
 ---
 
 ## Summary
 
-*Very brief summary of the foreseen changes.*
+_Very brief summary of the foreseen changes._
 
 ## Acceptance Criteria
 
@@ -21,12 +20,12 @@ assignees: ''
 
 ## Discussion
 
-*Add extended discussion here*
+_Add extended discussion here_
 
 ## Screenshots
 
-*optional*
+_optional_
 
 ## Additional Information
 
-*relevant links to Slack messages, for example*
+_relevant links to Slack messages, for example_
