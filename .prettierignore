@@ -1,4 +1,4 @@
 .gitignore
-README.md
 .eslintcache
 .prettierignore
+README.md
