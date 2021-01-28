@@ -1,10 +1,21 @@
 import React from 'react';
+import styles from '../../CSS/followUs.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import styles from '../CSS/Footer.module.css';
 import { Button } from 'antd';
 import 'antd/dist/antd.css';
-
-export default function Footer() {
+import {
+  TwitterTimelineEmbed,
+  TwitterShareButton,
+  TwitterFollowButton,
+  TwitterHashtagButton,
+  TwitterMentionButton,
+  TwitterTweetEmbed,
+  TwitterMomentShare,
+  TwitterDMButton,
+  TwitterVideoEmbed,
+  TwitterOnAirButton,
+} from 'react-twitter-embed';
+export default function FollowUsSocial() {
   const Twitter = () => (
     <Button type="" shape="circle">
       <a href="https://twitter.com/UnderdogDevs">
@@ -46,12 +57,11 @@ export default function Footer() {
   );
 
   return (
-    <div className={styles.footer}>
-      <div className={styles.footerContainer1}>
-        <h5>
-          Contact us on <strong>social media</strong>
-        </h5>
-        <ul className={styles.icons}>
+    <div className={styles.followUs}>
+      {/* header with links */}
+      <div className={styles.header}>
+        <h5>Follow Us On Social Media</h5>
+        <ul className="icons">
           <Twitter />
           <Youtube />
           <Slack />
@@ -59,24 +69,14 @@ export default function Footer() {
           <Google />
         </ul>
       </div>
-      <div className={styles.footerContainer}>
-        <div className={styles.footerContainer2}>
-          <h5>Mentors</h5>
-          <p>Become a mentor</p>
-          <p>See the mentees</p>
-        </div>
-        <div className={styles.footerContainer3}>
-          <h5>Mentees</h5>
-          <p>Become a mentee</p>
-          <p>See the mentors</p>
-        </div>
-        <div className={styles.footerContainer4}>
-          <h5>Organization</h5>
-          <p>About</p>
-          <p>Terms</p>
-          <p>Privacy</p>
-          <p>Get involved</p>
-        </div>
+
+      {/* tweetContainer */}
+      <div className="tweetContainer">
+        <TwitterTweetEmbed tweetId={'1340821358184460289'} />
+
+        <TwitterTweetEmbed tweetId={'1340821358184460289'} />
+
+        <TwitterTweetEmbed tweetId={'1340821358184460289'} />
       </div>
     </div>
   );

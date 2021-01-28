@@ -25,12 +25,12 @@
   font-weight: 700;
   font-size: 22px;
 }
-.footer-container p {
+.footerContainer p {
   font-weight: 400;
   font-size: 22px;
 }
 
-.footer-container {
+.footerContainer {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -38,9 +38,9 @@
   justify-content: center;
 }
 
-.footer-container-2,
-.footer-container-3,
-.footer-container-4 {
+.footerContainer2,
+.footerContainer3,
+.footerContainer4 {
   align-self: flex-start;
 }
 
